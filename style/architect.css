@@ -131,7 +131,8 @@ main {
     color: #FF900E;
     font-weight: 700;
 }
-.dark{
+
+.dark {
     font-weight: 700;
 }
 
@@ -139,7 +140,28 @@ main {
 @media screen and (max-width: 576px) {
 
     .navbar,
-    .nav-links {
+    .nav-links,
+    .teams {
         flex-direction: column;
+    }
+
+    .team-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-feature {
+        margin-left: 1rem;
+    }
+}
+
+/* responsive style for medium device  */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams {
+        flex-direction: column;
+    }
+
+    .team-feature {
+        margin: 1.25rem auto;
+
     }
 }
