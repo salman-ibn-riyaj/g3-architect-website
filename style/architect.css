@@ -170,7 +170,33 @@ main {
     color: #727272;
     font-size: 1.25rem;
     font-weight: 700;
+    
    
+}
+
+.section-title{
+    font-size: 2.81rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.section-para{
+    margin-bottom: 3.12rem;
+    max-width: 32rem;
+    line-height: 1.62rem;
+    color: #727272;
+}
+
+/* sponsor info styles  */
+
+.sponsors-info{
+    max-width: 33.75rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-container{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 /* responsive style for mobile device  */
@@ -189,6 +215,15 @@ main {
     .team-feature {
         margin-left: 1rem;
     }
+
+    .fact-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sponsor-container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
 }
 
 /* responsive style for medium device  */
@@ -200,5 +235,10 @@ main {
     .team-feature {
         margin: 1.25rem auto;
 
+    }
+
+    .fact-container, .sponsor-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
 }
