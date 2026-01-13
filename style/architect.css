@@ -110,6 +110,7 @@ main {
 
 .team-feature {
     margin-left: 4.56rem;
+    max-width: 530px;
 }
 
 .feature-title {
@@ -134,6 +135,42 @@ main {
 
 .dark {
     font-weight: 700;
+}
+
+/* some fact styles  */
+
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4.75rem;
+}
+
+/* .fact img{
+    height: 2.81rem;
+    width: 2.25rem;
+} */
+ .fact{
+    padding: 2.5rem;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+
+.fact h3{
+    font-size: 2.8rem;
+    color: #131313;
+    margin-bottom: .31rem;
+    margin-top: .62rem;
+}
+
+.fact .fact-para{
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: 700;
+   
 }
 
 /* responsive style for mobile device  */
