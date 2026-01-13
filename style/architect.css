@@ -39,6 +39,7 @@ main>section {
 }
 
 
+
 /* header style  */
 
 
@@ -63,7 +64,7 @@ main>section {
 
 .navbar,
 .banner,
-main {
+main, footer {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -94,6 +95,70 @@ main {
     max-width: 100%;
     padding-bottom: 2.81rem;
 }
+
+/* love and enjoy section  */
+
+
+.love-card {
+    padding: 1.87rem;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 1.25rem;
+}
+
+.love-title {
+    font-size: 1.25rem;
+    color: #131313;
+    font-weight: 600;
+}
+
+.love-section {
+    gap: 8.75rem;
+}
+
+.love-enjoy h3 {
+    border-left: 5px solid #FF900E;
+    ;
+    padding-left: 1rem;
+}
+
+.love-title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.love-card .section-para {
+    margin-bottom: 0px;
+}
+
+.love-enjoy .section-para {
+    margin-bottom: 0px;
+}
+
+.love-card .love-title {
+    margin-top: 0px;
+}
+
+#secondary {
+    color: white;
+    background-color: #FF900E;
+    padding: 2rem 2.8rem;
+    border-radius: 8px;
+    border: none;
+    margin-left: -5.75rem;
+    margin-top: -5rem;
+}
+
+#secondary .ten-year {
+    font-size: 3.9rem;
+    font-weight: 700;
+}
+
+#secondary .experi {
+    font-size: 1.5rem;
+    font-family: 500;
+}
+
 
 /* team feature related style  */
 .teams {
@@ -139,7 +204,7 @@ main {
 
 /* some fact styles  */
 
-.fact-container{
+.fact-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 4.75rem;
@@ -149,7 +214,7 @@ main {
     height: 2.81rem;
     width: 2.25rem;
 } */
- .fact{
+.fact {
     padding: 2.5rem;
     border: 1px solid #FF900E;
     border-radius: 8px;
@@ -157,29 +222,30 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
- }
+}
 
-.fact h3{
+.fact h3 {
     font-size: 2.8rem;
     color: #131313;
     margin-bottom: .31rem;
     margin-top: .62rem;
 }
 
-.fact .fact-para{
+.fact .fact-para {
     color: #727272;
     font-size: 1.25rem;
     font-weight: 700;
-    
-   
+
+
 }
 
-.section-title{
+.section-title {
     font-size: 2.81rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
-.section-para{
+
+.section-para {
     margin-bottom: 3.12rem;
     max-width: 32rem;
     line-height: 1.62rem;
@@ -188,27 +254,55 @@ main {
 
 /* sponsor info styles  */
 
-.sponsors-info{
+.sponsors-info {
     max-width: 33.75rem;
     margin: 0 auto;
     text-align: center;
 }
-.sponsor-container{
+
+.sponsor-container {
     display: grid;
     gap: 24px;
     grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
 }
-.sponsor-container img{
+
+.sponsor-container img {
     filter: grayscale(100%);
 }
+
+
+/* footer section style  */
+.footer{
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: #FFF4E7;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+footer{
+    /* max-width: 1140px;
+    margin: 0 auto; */
+    /* margin-bottom: 15rem; */
+    margin: 120 auto;
+   
+}
+
+
 
 /* responsive style for mobile device  */
 @media screen and (max-width: 576px) {
 
     .navbar,
     .nav-links,
-    .teams {
+    .teams,
+    .love-section {
         flex-direction: column;
+    }
+
+    .love-enjoy-image {
+        width: 100%;
     }
 
     .team-images {
@@ -219,20 +313,29 @@ main {
         margin-left: 1rem;
     }
 
-    .fact-container{
+    .fact-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .sponsor-container{
+    .sponsor-container {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
+
+    #secondary{
+        margin: 1.25rem 1.25rem;
+    }
+
+   
 }
 
 /* responsive style for medium device  */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams {
+    .teams, .love-section {
         flex-direction: column;
+    }
+    #secondary{
+        margin: 1.25rem 11rem;
     }
 
     .team-feature {
@@ -240,8 +343,12 @@ main {
 
     }
 
-    .fact-container, .sponsor-container{
+    .fact-container,
+    .sponsor-container {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+    footer{
+        width: 100%;
     }
 }
