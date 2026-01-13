@@ -198,6 +198,9 @@ main {
     gap: 24px;
     grid-template-columns: repeat(5, 1fr);
 }
+.sponsor-container img{
+    filter: grayscale(100%);
+}
 
 /* responsive style for mobile device  */
 @media screen and (max-width: 576px) {
