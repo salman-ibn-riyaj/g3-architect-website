@@ -339,6 +339,10 @@ footer {
         flex-direction: column;
     }
 
+    .love-enjoy-image {
+        max-width: 100%;
+    }
+
     #secondary {
         margin: 1.25rem 11rem;
     }
