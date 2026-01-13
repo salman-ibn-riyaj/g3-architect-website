@@ -64,7 +64,8 @@ main>section {
 
 .navbar,
 .banner,
-main, footer {
+main,
+footer {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -273,20 +274,21 @@ main, footer {
 
 
 /* footer section style  */
-.footer{
+.footer {
     text-align: center;
     font-size: 1.25rem;
     background-color: #FFF4E7;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    
+
 }
-footer{
+
+footer {
     /* max-width: 1140px;
     margin: 0 auto; */
     /* margin-bottom: 15rem; */
     margin: 120 auto;
-   
+
 }
 
 
@@ -302,7 +304,7 @@ footer{
     }
 
     .love-enjoy-image {
-        width: 100%;
+        max-width: 100%;
     }
 
     .team-images {
@@ -322,19 +324,22 @@ footer{
         justify-items: center;
     }
 
-    #secondary{
+    #secondary {
         margin: 1.25rem 1.25rem;
     }
 
-   
+
 }
 
 /* responsive style for medium device  */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams, .love-section {
+
+    .teams,
+    .love-section {
         flex-direction: column;
     }
-    #secondary{
+
+    #secondary {
         margin: 1.25rem 11rem;
     }
 
@@ -348,7 +353,8 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
-    footer{
+
+    footer {
         width: 100%;
     }
 }
